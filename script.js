@@ -14,6 +14,22 @@ document.addEventListener('mousemove', e => {
 document.addEventListener('mousedown', () => cursor.style.transform = 'translate(-50%, -50%) scale(1.6)');
 document.addEventListener('mouseup', () => cursor.style.transform = 'translate(-50%, -50%) scale(1)');
 
+// Tıklanabilir elementlerde cursor mora dönüşsün
+document.querySelectorAll('a, button, [onclick]').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        cursor.style.background = '#7c3aed';
+        cursor.style.width = '14px';
+        cursor.style.height = '14px';
+        cursor.style.boxShadow = '0 0 12px #7c3aed';
+    });
+    el.addEventListener('mouseleave', () => {
+        cursor.style.background = 'var(--accent-2)';
+        cursor.style.width = '10px';
+        cursor.style.height = '10px';
+        cursor.style.boxShadow = 'none';
+    });
+});
+
 /* =====================
    NAVBAR SCROLL
 ===================== */
