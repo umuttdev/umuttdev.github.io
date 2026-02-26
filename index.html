@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Umut Coşkuner | Portföy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/gorseller/İCON 7.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+    <div class="intro-inner">
+        <img src="gorseller/umtt.png" alt="Logo" class="intro-logo">
+        <div class="intro-lines">
+            <span class="intro-name">Umut Coşkuner</span>
+            <span class="intro-sub">Portföy</span>
+        </div>
+    </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <div class="logo">
+        <img src="gorseller/umtt.png" alt="Logo">
+    </div>
+    <nav>
+        <a href="#about">Hakkımda</a>
+        <a href="#skills">Yetenekler</a>
+        <a href="#projects">Projeler</a>
+        <a class="btn-contact" href="#contact-popup" id="contactTrigger">İletişim</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">Hakkımda</a>
+    <a href="#skills" class="mob-link">Yetenekler</a>
+    <a href="#projects" class="mob-link">Projeler</a>
+    <a href="#contact-popup" class="mob-link" id="mobileContactTrigger">İletişim</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Müsait — Yeni projelere açığım</span>
+        </div>
+        <h1 class="hero-title">
+            Merhaba,<br>
+            Ben <span class="highlight">Umut</span>
+        </h1>
+        <p class="hero-role">
+            <span class="role-label">_</span>
+            <span id="typing"></span>
+        </p>
+        <p class="hero-desc">Yazılım, donanım ve tasarım sınırlarını zorlayan projeler üretiyorum.</p>
+
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary hero-scroll-btn">Projelerimi Gör</a>
+            <a href="#about" class="btn-ghost">Hakkımda</a>
+        </div>
+
+        <div class="hero-stack">
+            <span class="stack-label">Tech Stack</span>
+            <div class="stack-tags">
+                <span>ESP32</span>
+                <span>Node.js</span>
+                <span>JavaScript</span>
+                <span>Arduino</span>
+                <span>HTML/CSS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="hero-img-wrapper">
+            <div class="hero-img-shadow"></div>
+            <div class="hero-img-glow"></div>
+            <div class="hero-img-ring"></div>
+            <div class="hero-img-ring-inner"></div>
+            <img src="gorseller/pp.png" alt="Umut Coşkuner" class="hero-img">
+        </div>
+        <div class="floating-card card-iot">
+            <span class="fc-icon">⚡</span>
+            <span>IoT Dev</span>
+        </div>
+        <div class="floating-card card-web">
+            <span class="fc-icon">🌐</span>
+            <span>Web Dev</span>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about reveal-section">
+    <div class="section-label">01 — Hakkımda</div>
+    <div class="about-grid">
+        <div class="about-text">
+            <h2>Kim <span class="highlight">Olduğum</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae dolore voluptatum facere mollitia culpa eligendi fugiat architecto inventore, deserunt autem aperiam adipisci esse! Asperiores voluptates suscipit temporibus facilis optio libero porro quo eum quisquam perspiciatis earum, expedita illo recusandae eaque explicabo?
+            </p>
+            <p>
+                Facere molestias ipsum dignissimos corrupti possimus distinctio saepe suscipit accusantium eveniet modi molestiae, tenetur laborum dolorem. Cumque ducimus, quam dolorem ratione et sunt similique vero nemo accusamus, minima, delectus laboriosam explicabo.
+            </p>
+        </div>
+        <div class="about-stats">
+            <div class="stat-card">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Yıl Deneyim</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">Tamamlanan Proje</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num">4</span>
+                <span class="stat-label">Alan Uzmanlığı</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Öğrenme İsteği</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills reveal-section">
+    <div class="section-label">02 — Yetenekler</div>
+    <h2>Ne <span class="highlight">Yapıyorum</span></h2>
+
+    <div class="skills-grid">
+        <div class="skill-card" data-index="0">
+            <div class="skill-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Frontend</h3>
+            <p>HTML, CSS ve JavaScript ile modern, responsive arayüzler.</p>
+            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+
+        <div class="skill-card" data-index="1">
+            <div class="skill-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Backend</h3>
+            <p>Node.js ve Express ile sağlam, ölçeklenebilir sunucu yapıları.</p>
+            <div class="skill-tags"><span>Node.js</span><span>Express</span><span>API</span></div>
+        </div>
+
+        <div class="skill-card" data-index="2">
+            <div class="skill-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>IoT & Donanım</h3>
+            <p>ESP32, Arduino ve sensör sistemleriyle akıllı cihaz geliştirme.</p>
+            <div class="skill-tags"><span>ESP32</span><span>Arduino</span><span>Sensör</span></div>
+        </div>
+
+        <div class="skill-card" data-index="3">
+            <div class="skill-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>UI / UX</h3>
+            <p>Kullanıcı odaklı, estetik ve işlevsel arayüz tasarımı.</p>
+            <div class="skill-tags"><span>Figma</span><span>Tasarım</span><span>UX</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects reveal-section">
+    <div class="section-label">03 — Projeler</div>
+    <h2>Yaptıklarım</h2>
+
+    <div class="project-category-label">
+        <span class="cat-dot cat-robotik"></span> Robotik Projelerim
+    </div>
+    <div class="project-grid">
+        <div class="project-card" style="--card-delay: 0ms">
+            <div class="project-card-inner">
+                <div class="project-img-wrap">
+                    <img src="gorseller/İCON 7.webp" alt="Portfolio Sitesi">
+                    <div class="project-overlay">
+                        <button class="project-detail-btn" onclick="openModal(this)"
+                            data-img1="gorseller/İCON2.webp"
+                            data-img2="gorseller/İCON2.webp"
+                            data-img3="gorseller/İCON2.webp"
+                            data-text="Bu proje IoT tabanlı bir sistemdir. ESP32 ve web arayüzü kullanılmıştır."
+                            data-link="https://github.com/umuttsll/">
+                            Detayları Gör →
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Sitesi</h3>
+                    <p>Kişisel web sitesi projesi</p>
+                    <div class="project-tags"><span>Web</span><span>HTML</span><span>CSS</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="--card-delay: 80ms">
+            <div class="project-card-inner">
+                <div class="project-img-wrap">
+                    <img src="gorseller/İCON 7.webp" alt="Dashboard">
+                    <div class="project-overlay">
+                        <button class="project-detail-btn" onclick="openModal(this)"
+                            data-img1="gorseller/İCON 7.webp"
+                            data-img2="gorseller/İCON 7.webp"
+                            data-img3="gorseller/İCON 7.webp"
+                            data-text="Bu proje IoT tabanlı bir sistemdir. ESP32 ve web arayüzü kullanılmıştır."
+                            data-link="https://github.com/umuttsll/">
+                            Detayları Gör →
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Dashboard</h3>
+                    <p>Admin panel tasarımı</p>
+                    <div class="project-tags"><span>Node.js</span><span>UI</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="--card-delay: 160ms">
+            <div class="project-card-inner">
+                <div class="project-img-wrap">
+                    <img src="gorseller/İCON 7.webp" alt="Landing Page">
+                    <div class="project-overlay">
+                        <button class="project-detail-btn" onclick="openModal(this)"
+                            data-img1="gorseller/İCON3.webp"
+                            data-img2="gorseller/İCON3.webp"
+                            data-img3="gorseller/İCON3.webp"
+                            data-text="Bu proje IoT tabanlı bir sistemdir. ESP32 ve web arayüzü kullanılmıştır."
+                            data-link="https://github.com/umuttsll/">
+                            Detayları Gör →
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Landing Page</h3>
+                    <p>Startup tanıtım sitesi</p>
+                    <div class="project-tags"><span>Web</span><span>JS</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-category-label" style="margin-top: 60px;">
+        <span class="cat-dot cat-web"></span> Web Sitesi Projelerim
+    </div>
+    <div class="project-grid">
+        <div class="project-card" style="--card-delay: 0ms">
+            <div class="project-card-inner">
+                <div class="project-img-wrap">
+                    <img src="gorseller/İCON 7.webp" alt="Portfolio Sitesi">
+                    <div class="project-overlay">
+                        <button class="project-detail-btn" onclick="openModal(this)"
+                            data-img1="gorseller/İCON2.webp"
+                            data-img2="gorseller/İCON2.webp"
+                            data-img3="gorseller/İCON2.webp"
+                            data-text="Modern ve responsive portföy sitesi."
+                            data-link="https://github.com/umuttsll/">
+                            Detayları Gör →
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Sitesi</h3>
+                    <p>Kişisel web sitesi projesi</p>
+                    <div class="project-tags"><span>Web</span><span>HTML</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="--card-delay: 80ms">
+            <div class="project-card-inner">
+                <div class="project-img-wrap">
+                    <img src="gorseller/İCON 7.webp" alt="Dashboard">
+                    <div class="project-overlay">
+                        <button class="project-detail-btn" onclick="openModal(this)"
+                            data-img1="gorseller/İCON7.webp"
+                            data-img2="gorseller/İCON7.webp"
+                            data-img3="gorseller/İCON7.webp"
+                            data-text="Veri odaklı yönetim paneli."
+                            data-link="https://github.com/umuttsll/">
+                            Detayları Gör →
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Dashboard</h3>
+                    <p>Admin panel tasarımı</p>
+                    <div class="project-tags"><span>Node.js</span><span>UI</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" style="--card-delay: 160ms">
+            <div class="project-card-inner">
+                <div class="project-img-wrap">
+                    <img src="gorseller/İCON 7.webp" alt="Landing Page">
+                    <div class="project-overlay">
+                        <button class="project-detail-btn" onclick="openModal(this)"
+                            data-img1="gorseller/İCON3.webp"
+                            data-img2="gorseller/İCON3.webp"
+                            data-img3="gorseller/İCON3.webp"
+                            data-text="Dönüşüm odaklı tek sayfa tasarım."
+                            data-link="https://github.com/umuttsll/">
+                            Detayları Gör →
+                        </button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Landing Page</h3>
+                    <p>Startup tanıtım sitesi</p>
+                    <div class="project-tags"><span>Web</span><span>UX</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <span class="footer-name">Umut Coşkuner</span>
+            <span class="footer-sub">Yazılımcı & Web Geliştirici</span>
+        </div>
+        <div class="footer-right">
+            <a href="mailto:umutcsknr1@gmail.com">umutcsknr1@gmail.com</a>
+            <a href="https://telegram.me/umuttsll" target="_blank">telegram.me/umuttsll</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Umut Coşkuner — Tüm Hakları Saklıdır</span>
+    </div>
+</footer>
+
+<!-- CONTACT POPUP -->
+<div id="contactPopup" class="popup-overlay">
+    <div class="popup-content">
+        <button class="popup-close" aria-label="Kapat">&times;</button>
+        <div class="popup-tag">İletişim</div>
+        <h2>Selamlaşalım 👋</h2>
+        <p>Yeni proje fikirleri, iş birlikleri veya sorular için benimle iletişime geçebilirsin.</p>
+        <div class="popup-info">
+            <a class="popup-link" href="mailto:umutcsknr1@gmail.com">
+                <span class="popup-link-icon">✉</span>
+                umutcsknr1@gmail.com
+            </a>
+            <a class="popup-link" href="https://telegram.me/umuttsll" target="_blank">
+                <span class="popup-link-icon">✈</span>
+                telegram.me/umuttsll
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-x-close" onclick="closeModal()">×</button>
+        <div class="modal-images">
+            <img id="modalImg1" alt="">
+            <img id="modalImg2" alt="">
+            <img id="modalImg3" alt="">
+        </div>
+        <div class="modal-text">
+            <p id="modalText"></p>
+        </div>
+        <div class="modal-buttons">
+            <button class="btn-modal-close" onclick="closeModal()">Kapat</button>
+            <a id="modalLink" target="_blank" class="btn-modal-go">Projeye Git →</a>
+        </div>
+        <div class="modal-esc-hint">ESC tuşu veya "Kapat" ile çıkabilirsiniz.</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
