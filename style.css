@@ -1120,7 +1120,7 @@ footer {
 @media (max-width: 768px) {
     .hero { 
         flex-direction: column; 
-        padding: 160px 24px 60px;   /* 130px → 160px */
+        padding: 200px 24px 60px;   /* 130px → 160px */
         text-align: center; 
         gap: 48px; 
     }
@@ -1130,7 +1130,7 @@ footer {
     .hero-badge { margin: 0 auto 24px; }
     .hero-stack { text-align: left; }
     .stack-tags { justify-content: center; }
-    .hero-visual { order: -1; }
+    .hero-visual { order: -1; margin-top: 50px;}
     .hero-img-wrapper { width: 220px; height: 220px; }
     .hero-img { width: 200px; height: 200px; }
     .floating-card { display: none; }
