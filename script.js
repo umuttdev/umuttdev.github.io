@@ -45,7 +45,24 @@ const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
 hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
+    const isOpen = mobileMenu.classList.contains('open');
+    if (isOpen) {
+        mobileMenu.classList.remove('open');
+        setTimeout(() => mobileMenu.style.display = 'none', 400);
+    } else {
+        mobileMenu.style.display = 'flex';
+        requestAnimationFrame(() => mobileMenu.classList.add('open'));
+    }
+    // Hamburger ikonu X'e dönüşsün
+    hamburger.classList.toggle('active');
+});
+
+document.querySelectorAll('.mob-link').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('active');
+        setTimeout(() => mobileMenu.style.display = 'none', 400);
+    });
 });
 
 document.querySelectorAll('.mob-link').forEach(link => {
