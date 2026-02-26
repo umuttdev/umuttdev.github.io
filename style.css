@@ -251,7 +251,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 120px 60px 80px;
+    padding: 160px 60px 80px;   /* 120px → 160px */
     position: relative;
     overflow: hidden;
     gap: 40px;
@@ -1117,7 +1117,15 @@ footer {
     .hamburger { display: flex; }
 
     /* HERO */
-    .hero { flex-direction: column; padding: 100px 24px 60px; text-align: center; gap: 48px; }
+@media (max-width: 768px) {
+    .hero { 
+        flex-direction: column; 
+        padding: 160px 24px 60px;   /* 130px → 160px */
+        text-align: center; 
+        gap: 48px; 
+    }
+}
+   
     .hero-cta { justify-content: center; flex-wrap: wrap; }
     .hero-badge { margin: 0 auto 24px; }
     .hero-stack { text-align: left; }
